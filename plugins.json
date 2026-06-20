@@ -3,11 +3,32 @@
   "checksumAlgorithm": "sha256",
   "plugins": [
     {
-      "id": "auto-group",
-      "name": "Smart Auto-Grouping",
-      "description": "Sort new connections into sidebar groups by glob rule.",
+      "id": "aws-ssm",
+      "name": "AWS SSM",
+      "description": "Open AWS Session Manager shells as a protocol (no inbound SSH needed).",
       "author": "mfat",
-      "homepage": "https://github.com/mfat/sshpilot-auto-group",
+      "homepage": "https://github.com/mfat/sshpilot-aws-ssm",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "process"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-aws-ssm/releases/download/v1.0.0/aws-ssm.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-aws-ssm/releases/download/v1.0.0/aws-ssm.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "notes",
+      "name": "Connection Notes",
+      "description": "A freeform note per connection, pruned when a connection is deleted.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-notes",
       "latestVersion": "1.0.0",
       "versions": [
         {
@@ -19,8 +40,8 @@
             "settings"
           ],
           "package": {
-            "downloadUrl": "https://github.com/mfat/sshpilot-auto-group/releases/download/v1.0.0/auto-group.zip",
-            "checksumUrl": "https://github.com/mfat/sshpilot-auto-group/releases/download/v1.0.0/auto-group.zip.sha256"
+            "downloadUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.0.0/notes.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.0.0/notes.zip.sha256"
           }
         }
       ]
@@ -45,6 +66,31 @@
           "package": {
             "downloadUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v1.0.0/easyenv-workspaces.zip",
             "checksumUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v1.0.0/easyenv-workspaces.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hetzner",
+      "name": "Hetzner Cloud",
+      "description": "Browse Hetzner Cloud servers and add them as SSH connections.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-hetzner",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "keyring",
+            "network",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-hetzner/releases/download/v1.0.0/hetzner.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-hetzner/releases/download/v1.0.0/hetzner.zip.sha256"
           }
         }
       ]
@@ -97,11 +143,11 @@
       ]
     },
     {
-      "id": "notes",
-      "name": "Connection Notes",
-      "description": "A freeform note per connection, pruned when a connection is deleted.",
+      "id": "runbook",
+      "name": "Runbook Snippets",
+      "description": "Per-connection command snippets, copy-to-clipboard.",
       "author": "mfat",
-      "homepage": "https://github.com/mfat/sshpilot-notes",
+      "homepage": "https://github.com/mfat/sshpilot-runbook",
       "latestVersion": "1.0.0",
       "versions": [
         {
@@ -113,8 +159,8 @@
             "settings"
           ],
           "package": {
-            "downloadUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.0.0/notes.zip",
-            "checksumUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.0.0/notes.zip.sha256"
+            "downloadUrl": "https://github.com/mfat/sshpilot-runbook/releases/download/v1.0.0/runbook.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-runbook/releases/download/v1.0.0/runbook.zip.sha256"
           }
         }
       ]
@@ -138,6 +184,77 @@
           "package": {
             "downloadUrl": "https://github.com/mfat/sshpilot-session-log/releases/download/v1.0.0/session-log.zip",
             "checksumUrl": "https://github.com/mfat/sshpilot-session-log/releases/download/v1.0.0/session-log.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "auto-group",
+      "name": "Smart Auto-Grouping",
+      "description": "Sort new connections into sidebar groups by glob rule.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-auto-group",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-auto-group/releases/download/v1.0.0/auto-group.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-auto-group/releases/download/v1.0.0/auto-group.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "key-audit",
+      "name": "SSH Key Audit",
+      "description": "Key age and certificate-expiry dashboard for ~/.ssh.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-key-audit",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "filesystem",
+            "process",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-key-audit/releases/download/v1.0.0/key-audit.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-key-audit/releases/download/v1.0.0/key-audit.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale Sync",
+      "description": "Add Tailscale tailnet peers as SSH connections.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-tailscale",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "process",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-tailscale/releases/download/v1.0.0/tailscale.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-tailscale/releases/download/v1.0.0/tailscale.zip.sha256"
           }
         }
       ]
