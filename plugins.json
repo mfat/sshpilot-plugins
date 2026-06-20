@@ -3,6 +3,29 @@
   "checksumAlgorithm": "sha256",
   "plugins": [
     {
+      "id": "notes",
+      "name": "Connection Notes",
+      "description": "A freeform note per connection, pruned when a connection is deleted.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-notes",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.0.0/notes.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.0.0/notes.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
       "id": "easyenv-workspaces",
       "name": "EasyEnv Workspaces",
       "description": "Provision easyenv.io dev workspaces and open them as SSH connections.",
@@ -22,6 +45,52 @@
           "package": {
             "downloadUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v1.0.0/easyenv-workspaces.zip",
             "checksumUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v1.0.0/easyenv-workspaces.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "name": "Host Health Dashboard",
+      "description": "Live up/down TCP status for every saved host.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-health",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "network",
+            "ui"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-health/releases/download/v1.0.0/health.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-health/releases/download/v1.0.0/health.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "auto-group",
+      "name": "Smart Auto-Grouping",
+      "description": "Sort new connections into sidebar groups by glob rule.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-auto-group",
+      "latestVersion": "1.0.0",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-auto-group/releases/download/v1.0.0/auto-group.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-auto-group/releases/download/v1.0.0/auto-group.zip.sha256"
           }
         }
       ]
