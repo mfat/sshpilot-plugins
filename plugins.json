@@ -24,29 +24,6 @@
       ]
     },
     {
-      "id": "notes",
-      "name": "Connection Notes",
-      "description": "A freeform note per connection, pruned when a connection is deleted.",
-      "author": "mfat",
-      "homepage": "https://github.com/mfat/sshpilot-notes",
-      "latestVersion": "1.1.1",
-      "versions": [
-        {
-          "version": "1.1.1",
-          "api_version": 1,
-          "permissions": [
-            "connections",
-            "ui",
-            "settings"
-          ],
-          "package": {
-            "downloadUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.1.1/notes.zip",
-            "checksumUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.1.1/notes.zip.sha256"
-          }
-        }
-      ]
-    },
-    {
       "id": "easyenv-workspaces",
       "name": "EasyEnv Workspaces",
       "description": "Provision easyenv.io dev workspaces and open them as SSH connections.",
@@ -143,29 +120,6 @@
       ]
     },
     {
-      "id": "runbook",
-      "name": "Runbook Snippets",
-      "description": "Per-connection command snippets, copy-to-clipboard.",
-      "author": "mfat",
-      "homepage": "https://github.com/mfat/sshpilot-runbook",
-      "latestVersion": "1.1.1",
-      "versions": [
-        {
-          "version": "1.1.1",
-          "api_version": 1,
-          "permissions": [
-            "connections",
-            "ui",
-            "settings"
-          ],
-          "package": {
-            "downloadUrl": "https://github.com/mfat/sshpilot-runbook/releases/download/v1.1.1/runbook.zip",
-            "checksumUrl": "https://github.com/mfat/sshpilot-runbook/releases/download/v1.1.1/runbook.zip.sha256"
-          }
-        }
-      ]
-    },
-    {
       "id": "session-log",
       "name": "Session Log",
       "description": "Session open/close history with CSV export for billing and incident review.",
@@ -255,6 +209,54 @@
           "package": {
             "downloadUrl": "https://github.com/mfat/sshpilot-tailscale/releases/download/v1.1.1/tailscale.zip",
             "checksumUrl": "https://github.com/mfat/sshpilot-tailscale/releases/download/v1.1.1/tailscale.zip.sha256"
+          }
+        }
+      ]
+    }
+  ],
+  "disabledPlugins": [
+    {
+      "id": "notes",
+      "name": "Connection Notes",
+      "description": "A freeform note per connection, pruned when a connection is deleted.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-notes",
+      "latestVersion": "1.1.1",
+      "versions": [
+        {
+          "version": "1.1.1",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.1.1/notes.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-notes/releases/download/v1.1.1/notes.zip.sha256"
+          }
+        }
+      ]
+    },
+    {
+      "id": "runbook",
+      "name": "Runbook Snippets",
+      "description": "Per-connection command snippets, copy-to-clipboard.",
+      "author": "mfat",
+      "homepage": "https://github.com/mfat/sshpilot-runbook",
+      "latestVersion": "1.1.1",
+      "versions": [
+        {
+          "version": "1.1.1",
+          "api_version": 1,
+          "permissions": [
+            "connections",
+            "ui",
+            "settings"
+          ],
+          "package": {
+            "downloadUrl": "https://github.com/mfat/sshpilot-runbook/releases/download/v1.1.1/runbook.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-runbook/releases/download/v1.1.1/runbook.zip.sha256"
           }
         }
       ]
