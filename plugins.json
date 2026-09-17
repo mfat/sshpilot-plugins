@@ -29,20 +29,22 @@
       "description": "Provision easyenv.io dev workspaces and open them as SSH connections.",
       "author": "mfat",
       "homepage": "https://github.com/mfat/sshpilot-easyenv",
-      "latestVersion": "1.0.0",
+      "latestVersion": "2.6.0",
       "versions": [
         {
-          "version": "1.0.0",
+          "version": "2.6.0",
           "api_version": 1,
           "permissions": [
             "network",
+            "filesystem",
+            "process",
             "keyring",
             "connections",
             "ui"
           ],
           "package": {
-            "downloadUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v1.0.0/easyenv-workspaces.zip",
-            "checksumUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v1.0.0/easyenv-workspaces.zip.sha256"
+            "downloadUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v2.6.0/easyenv-workspaces.zip",
+            "checksumUrl": "https://github.com/mfat/sshpilot-easyenv/releases/download/v2.6.0/easyenv-workspaces.zip.sha256"
           }
         }
       ]
